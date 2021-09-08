@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".Fragment.BottomBarFragments.OrgOwnFragment"
+        >
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:lottie_fileName="19134-loading.json"
+            app:lottie_loop="true"
+            app:lottie_autoPlay="true"
+            android:id="@+id/animationView"
+            />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardElevation="5dp"
+                    app:cardCornerRadius="15dp"
+                    android:layout_margin="10dp"
+
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:text="Accessories"
+                            android:textSize="18sp"
+                            android:gravity="center"
+                            android:textColor="@color/white"
+                            android:padding="5dp"
+                            android:background="#27496d"
+                            android:textStyle="bold"
+                            />
+
+                        <!--<Spinner
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/item_type_spinner"
+                            android:entries="@array/currency_array"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_gravity="center"
+                            />
+        -->
+
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/accoriesRV"
+                    android:layout_margin="10dp"
+                    />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardElevation="5dp"
+                    app:cardCornerRadius="15dp"
+                    android:layout_margin="10dp"
+                    android:id="@+id/moneyCV"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Money"
+                            android:textSize="18sp"
+                            android:gravity="center"
+                            android:textColor="@android:color/white"
+                            android:background="#035aa6"
+                            android:padding="5dp"
+                            android:textStyle="bold"
+                            />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/moneyRV"
+                    android:layout_margin="10dp"
+                    />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardElevation="5dp"
+                    app:cardCornerRadius="15dp"
+                    android:layout_margin="10dp"
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Transection History"
+                        android:textSize="18sp"
+                        android:gravity="center"
+                        android:textColor="@android:color/white"
+                        android:padding="5dp"
+                        android:background="#30475e"
+                        android:textStyle="bold"
+                        />
+
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:id="@+id/donationRV"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+</layout>

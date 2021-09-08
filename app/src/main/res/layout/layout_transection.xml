@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/current_work_card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="30dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="10dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#D1E4E2"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="15dp">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Amount : "
+                    android:id="@+id/transectionAmount"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black_alfa_70"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Created date"
+                    android:id="@+id/trandate"
+                    android:textSize="15sp"
+                    android:textStyle="italic"
+                    android:textColor="@color/black_alfa_70"
+                    />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/transectionID"
+                android:text="Transection ID : "
+                android:layout_marginTop="5dp"
+                android:textColor="@color/black_alfa_70"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Sender Name : "
+                    android:id="@+id/name"
+                    android:textSize="15sp"
+                    android:textColor="@color/black_alfa_70"/>
+
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Send to"
+                android:id="@+id/sendTo"
+                android:textSize="15sp"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/black_alfa_70"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
